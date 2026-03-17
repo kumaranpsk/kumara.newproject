@@ -22,4 +22,4 @@ jobs:
           docker pull your-dockerhub-username/devops-app
           docker stop devops-app || true
           docker rm devops-app || true
-          docker run -d -p 80:5000 --name devops-app your-dockerhub-username/devops-apip
+          docker run -d -p 80:5000 --name devops-app your-dockerhub-username/devops-app
