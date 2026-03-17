@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.KUMARAN_EC2 }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          docker pull your-dockerhub-username/devops-app
-          docker stop devops-app || true
-          docker rm devops-app || true
-          docker run -d -p 80:5000 --name devops-app your-dockerhub-username/devops-app
+          docker pull my-app
+          docker stop my-app || true
+          docker rm my-app || true
+          docker run -d -p 80:9000 --name my-app httpd
